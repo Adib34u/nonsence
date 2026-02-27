@@ -1,0 +1,53 @@
+body {
+
+    background-color: gray;
+    margin: 100px;
+    border: 10px rgba(15, 4, 34, 0.747) dotted;
+    color: black;
+    padding: 25px;
+}
+.green-color {
+
+    border: 24px rgb(4, 7, 8) dashed;
+    background-color: rgb(100, 131, 127);
+    margin: 75px;
+    padding: 30px;
+}
+#burst-er{
+    bottom: rectangular shape;
+    background-color: brown;
+    color: bisque;
+}
+nav ul li a{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 30%;
+    background-color: rgb(42, 151, 165);
+row-gap: 10px;
+}
+
+
+nav ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    color: rgb(104, 165, 162);
+}
+.row {
+    color: aqua;
+    margin-bottom: 10px;
+}
+.col-md-offset-1{
+     margin-bottom: 10px;
+    list-style: none;
+    color: rgb(104, 165, 162);
+}
+
+.single-contact-button {
+
+     margin-bottom: 10px;
+    list-style: none;
+    color: rgb(139, 29, 116);
+
+}

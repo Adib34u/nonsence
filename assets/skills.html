@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index/ex.css">
+    <title>my porfolio</title>
+</head>
+<body>
+     <nav>
+    <a href="#about.html">About</a>
+    <a href="#projects.html">Projects</a>
+    <a href="#skills.html">Skills</a>
+    <a href="#contact.html">Contact</a>
+  </nav>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Advanced Frontend (React, Vue, Angular)</li>
+        <li>Logo Design</li>
+        <li>Data analysis </li>
+        <li>UI/UX Design & Motion Graphics</li>
+      </ul>
+    </section>
+<script>
+    // Scroll-triggered animations
+    const sections = document.querySelectorAll("section");
+    const profileImg = document.querySelector(".profile-img");
+
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+
+      const rectImg = profileImg.getBoundingClientRect();
+      if (rectImg.top < window.innerHeight - 100) {
+        profileImg.classList.add("visible");
+      }
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
