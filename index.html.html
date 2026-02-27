@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My porfolio</title>
+        <link rel="stylesheet" href="assets/ex.css">
+    </head>
+<body>
+  <header>
+    
+    <h1>Mutasim Billah Adib</h1>
+    <p>Web Developer | Designer | Innovator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="assets/611284661_1207938497973375_7730075186528248208_n.jpg" alt="Adib" class="profile-img">
+        <p>
+          Hi there ! This is Mutasim Adib  a passionate Web Developer and Designer dedicated to creating 
+        sleek, modern, and high‑performance digital experiences. With a strong eye for detail and 
+        a love for innovation, I transform ideas into interactive solutions that blend creativity 
+        with cutting‑edge technology. My mission is simple: to craft designs that not only look 
+        premium but also deliver seamless functionality.
+
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>Modern web app with cutting-edge design and performance.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Creative solution blending UI/UX with advanced functionality.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>Premium project showcasing innovation and scalability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Advanced Frontend (React, Vue, Angular)</li>
+        <li>Logo Design</li>
+        <li>Data analysis </li>
+        <li>UI/UX Design & Motion Graphics</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: mutasimbillahadib@gmailcom</p>
+      <p>LinkedIn: linkedin.com/in/adib34u</p>
+      <p>GitHub: github.com/adib34u</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Mutasim Billah Adib. Premium Portfolio Experience.</p>
+  </footer>
+
+  <script>
+    // Scroll-triggered animations
+    const sections = document.querySelectorAll("section");
+    const profileImg = document.querySelector(".profile-img");
+
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+
+      const rectImg = profileImg.getBoundingClientRect();
+      if (rectImg.top < window.innerHeight - 100) {
+        profileImg.classList.add("visible");
+      }
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+
+
+</html>
+
+
+
+
+
+    
+
+</html>
